@@ -1,0 +1,46 @@
+----
+Document
+
+    <ul>
+        <li>english document
+            <ol>
+                <li>https://lodash.com/</li>
+            </ol>
+        </li>
+        <li>document
+            <ul>
+                <li><a target="_blank" href="http://lodashjs.com/docs/">http://lodashjs.com/docs/</a></li>
+            </ul>
+        </li>
+    </ul>
+
+----
+速讀
+category:text
+
+<h4>Destructuring</h4>
+<pre class="js-return"><code class="javascript">
+    // 陣列分割
+    _.chunk(['a', 'b', 'c', 'd'], 3);
+    // => [['a', 'b', 'c'], ['d']]
+
+    // 留下真值
+    _.compact([0, 1, false, 2, '', 3]);
+    // => [1, 2, 3]
+</code></pre>
+
+
+
+----
+陣列分割
+
+<h4>Destructuring</h4>
+<pre class="js-return"><code class="javascript">
+    _.chunk(['a', 'b', 'c', 'd'], 2);
+    // => [['a', 'b'], ['c', 'd']]
+
+    _.chunk(['a', 'b', 'c', 'd'], 3);
+    // => [['a', 'b', 'c'], ['d']]
+</code></pre>
+
+
