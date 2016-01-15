@@ -21,8 +21,8 @@ gulp.task('list', function () {
 
 gulp.task('php-build', function () {
     run('php -q ../home/build.php')
-        .exec()
-        .pipe(gulp.dest('output'));
+        .exec();
+        // .pipe(gulp.dest('output'));
 });
 
 gulp.task('watch', function () {
