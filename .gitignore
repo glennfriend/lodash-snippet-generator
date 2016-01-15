@@ -2,3 +2,4 @@
 /var/*
 !/var/.htaccess
 *.log
+node_modules/
