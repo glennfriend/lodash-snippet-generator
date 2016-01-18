@@ -29,6 +29,9 @@ class BaseController
      */
     protected function loadHelper(Array $args)
     {
+        // 目前並不是使用 controller 的方式, 所以這裡不進行以下動作
+        return;
+
         if (isCli()) {
             // TODO: 找時間對 console 指令的格式, 做解析
             return;

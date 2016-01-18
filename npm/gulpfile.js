@@ -3,8 +3,8 @@ var gulp    = require("gulp"),
     connect = require('gulp-connect');
 
 var watchList = [
-    '../src/parse.txt',
-    '../src/template.txt',
+    '../src/parse/*.htm',
+    '../src/template.htm',
 ];
 
 gulp.task('connect', function () {

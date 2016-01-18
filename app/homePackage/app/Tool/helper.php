@@ -8,6 +8,7 @@ namespace AppModule;
 /**
  *  取得 route 處理之後獲得的參數
  */
+/*
 function attrib($key, $defaultValue=null)
 {
     $val = Tool\LoadHelper::getRequest()->getAttribute($key);
@@ -16,6 +17,7 @@ function attrib($key, $defaultValue=null)
     }
     return $val;
 }
+*/
 
 /**
  *  輸出

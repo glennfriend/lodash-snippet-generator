@@ -59,7 +59,7 @@
                         <h3 class="panel-title"></h3>
                     </div>
                     <div class="list-group">
-                        <a class="list-group-item js-light" data-id="094535" href="_094535.htm#094535">Document</a><a class="list-group-item js-light" data-id="49b917" href="_49b917.htm#49b917">é€Ÿè®€</a><a class="list-group-item js-light" data-id="90245b" href="_90245b.htm#90245b">é™£åˆ—åˆ†å‰²</a>
+                        <a class="list-group-item js-light" data-id="64ad41" href="_64ad41.htm#64ad41">Custom Demo</a><a class="list-group-item js-light" data-id="094535" href="_094535.htm#094535">Document</a><a class="list-group-item js-light" data-id="70f23f" href="_70f23f.htm#70f23f">Quick View</a><a class="list-group-item js-light" data-id="90245b" href="_90245b.htm#90245b">é™£åˆ—åˆ†å‰²</a>
                     </div>
                 </div>
 
@@ -67,6 +67,49 @@
             <div id="content" class="col-md-10">
 
 
+
+<style>
+    .is_textarea {
+        width: 100%;
+        height: 600px;
+        border: 3px solid #cccccc;
+        padding: 5px;
+        font-family: Hack, "Source Code Pro", Inconsolata, GulimChe, Tahoma, sans-serif;
+    }
+</style>
+<script>
+
+    var runCode = function()
+    {
+        var sourceCode = $(".is_textarea").val();
+        var run = new Function(sourceCode);
+        run();
+    };
+
+    $(function() {
+        //
+        $(".is_textarea").on('keydown', function(e){
+            if (e.keyCode === 13 && e.ctrlKey) {
+                runCode();
+                e.preventDefault();
+            }
+        });
+
+        // §Q¥Î³oºØ¤è¦¡Åý ´å¼Ð ²¾¦Ü ³Ì«á­±
+        $('textarea.is_textarea').focus();
+        var value = $('textarea.is_textarea').val();
+        $('textarea.is_textarea').val('');
+        $('textarea.is_textarea').val(value);
+
+        $('textarea.is_textarea').click();
+    });
+</script>
+
+<p>
+<textarea class="is_textarea">console.log("Hello World");
+</textarea>
+<input type="button" value="Ctrl + Enter to run code" onClick="runCode()" />
+</p>
 
             </div>
         </div>
