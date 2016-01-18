@@ -20,7 +20,7 @@ gulp.task('list', function () {
 });
 
 gulp.task('php-build', function () {
-    run('php -q ../home/build.php')
+    run('php -q ../shell/build.php')
         .exec();
         // .pipe(gulp.dest('output'));
 });
